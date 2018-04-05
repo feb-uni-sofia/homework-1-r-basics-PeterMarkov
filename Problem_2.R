@@ -10,6 +10,10 @@ xmax <- c ( 25.0, 22.8, 31.2, 27.3, 28.4, 20.2, 24.1 )
 xmin - xmax
 
 #(c) (2 points) Compute the average minimum temperature and the average maximal temperature.
+
+## NOTE: use the mean function, no need to go the verbose way of calculating sum and
+## length. In the class we did this only to show the sum and length functions.
+
 totalMinimum <- sum(xmin)
 totalMinimum
 avgMinimum <- totalMinimum/length(xmin)
@@ -23,7 +27,8 @@ avgMaximum
 #(d) (3 points) Use the subsetting operator [ ] to select those elements of xmin where
 #the minimum temperature was below its weekly average.
 
-xmin [c(xmin<avgMinimum)]
+## Superfluous 'c'
+xmin [xmin<avgMinimum]
 
 #(e) (3 points) Use the subsetting operator [ ] to select those elements of xmin where
 #the maximal temperature was above its weekly average.
@@ -44,7 +49,8 @@ temperatures
 #(h) (3 points) Create a new column in xminFahrenheit that equals the minimum
 #temperature converted to a Fahrenheit scale. Hint: the conversion formula is погледни формулaтa where C is degrees Celsius and F degrees Fahrenheit.
 
-xminFahrenheit <- c(9/5*xmin+32)
+## Superfluous 'c'
+xminFahrenheit <- 9/5*xmin+32
 temperatures [["xminFahrenheit"]] <- xminFahrenheit
 temperatures
 
@@ -52,7 +58,8 @@ temperatures
 #(i) (2 points) Create a new data.frame that contains only the temperature measurements
 #in Fahrenheit.
 
-xmaxFahrenheit <- c(9/5*xmax+32)
+## Superfluous 'c'
+xmaxFahrenheit <- 9/5*xmax+32
 temperatureFahrenheit <- data.frame ( xminFahrenheit, xmaxFahrenheit)
 temperatureFahrenheit
 

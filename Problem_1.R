@@ -1,3 +1,5 @@
+## NOTE: readability: leave some blank linkes between the code to make it more readable
+
 #Problem 1 
 #(a)  (2 points) Create a vector with the numbers 4, 1, 1, 4 called x. 
 x <- c(4, 1, 1, 4)
