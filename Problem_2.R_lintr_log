@@ -1,0 +1,181 @@
+
+R version 3.2.3 (2015-12-10) -- "Wooden Christmas-Tree"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> lintr::lint("Problem_2.R")
+Problem_2.R:5:54: style: Trailing whitespace is superfluous.
+xmin <- c (23.0, 20.5, 28.2, 20.3, 22.4, 17.2, 18.2 ) 
+                                                     ^
+Problem_2.R:6:55: style: Trailing whitespace is superfluous.
+xmax <- c ( 25.0, 22.8, 31.2, 27.3, 28.4, 20.2, 24.1 ) 
+                                                      ^
+Problem_2.R:17:1: style: Variable and function names should be all lowercase.
+totalMinimum <- sum(xmin)
+^~~~~~~~~~~~
+Problem_2.R:18:1: style: Variable and function names should be all lowercase.
+totalMinimum
+^~~~~~~~~~~~
+Problem_2.R:19:1: style: Variable and function names should be all lowercase.
+avgMinimum <- totalMinimum/length(xmin)
+^~~~~~~~~~
+Problem_2.R:19:15: style: Variable and function names should be all lowercase.
+avgMinimum <- totalMinimum/length(xmin)
+              ^~~~~~~~~~~~
+Problem_2.R:19:27: style: Put spaces around all infix operators.
+avgMinimum <- totalMinimum/length(xmin)
+                         ~^~
+Problem_2.R:20:1: style: Variable and function names should be all lowercase.
+avgMinimum
+^~~~~~~~~~
+Problem_2.R:22:1: style: Variable and function names should be all lowercase.
+totalMaximum <-sum(xmax)
+^~~~~~~~~~~~
+Problem_2.R:22:14: style: Put spaces around all infix operators.
+totalMaximum <-sum(xmax)
+             ^~~
+Problem_2.R:23:1: style: Variable and function names should be all lowercase.
+totalMaximum
+^~~~~~~~~~~~
+Problem_2.R:24:1: style: Variable and function names should be all lowercase.
+avgMaximum <-totalMaximum/length(xmax)
+^~~~~~~~~~
+Problem_2.R:24:12: style: Put spaces around all infix operators.
+avgMaximum <-totalMaximum/length(xmax)
+           ^~~
+Problem_2.R:24:14: style: Variable and function names should be all lowercase.
+avgMaximum <-totalMaximum/length(xmax)
+             ^~~~~~~~~~~~
+Problem_2.R:24:26: style: Put spaces around all infix operators.
+avgMaximum <-totalMaximum/length(xmax)
+                        ~^~
+Problem_2.R:25:1: style: Variable and function names should be all lowercase.
+avgMaximum
+^~~~~~~~~~
+Problem_2.R:31:11: style: Put spaces around all infix operators.
+xmin [xmin<avgMinimum]
+         ~^~
+Problem_2.R:31:12: style: Variable and function names should be all lowercase.
+xmin [xmin<avgMinimum]
+           ^~~~~~~~~~
+Problem_2.R:36:13: style: Put spaces around all infix operators.
+xmin [c(xmin>avgMinimum)]
+           ~^~
+Problem_2.R:36:14: style: Variable and function names should be all lowercase.
+xmin [c(xmin>avgMinimum)]
+             ^~~~~~~~~~
+Problem_2.R:39:1: style: lines should not be more than 80 characters.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:39:1: style: Variable and function names should be all lowercase.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+^~~~~~~~
+Problem_2.R:39:15: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+              ^~~~~~~~~
+Problem_2.R:39:26: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                         ^~~~~~~~~
+Problem_2.R:39:37: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                    ^~~~~~~~~
+Problem_2.R:39:48: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                               ^~~~~~~~~
+Problem_2.R:39:59: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                                          ^~~~~~~~~
+Problem_2.R:39:70: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                                                     ^~~~~~~~~
+Problem_2.R:39:81: style: Only use double-quotes.
+dayNames <- c('03Mon18', '04Tue18', '05Wed18', '04Thu18', '05Fri18', '06Sat18', '07Sun18')
+                                                                                ^~~~~~~~~
+Problem_2.R:40:16: style: Variable and function names should be all lowercase.
+names(xmin) <- dayNames
+               ^~~~~~~~
+Problem_2.R:42:16: style: Variable and function names should be all lowercase.
+names(xmax) <- dayNames
+               ^~~~~~~~
+Problem_2.R:53:1: style: Variable and function names should be all lowercase.
+xminFahrenheit <- 9/5*xmin+32
+^~~~~~~~~~~~~~
+Problem_2.R:53:20: style: Put spaces around all infix operators.
+xminFahrenheit <- 9/5*xmin+32
+                  ~^~
+Problem_2.R:53:22: style: Put spaces around all infix operators.
+xminFahrenheit <- 9/5*xmin+32
+                    ~^~
+Problem_2.R:53:27: style: Put spaces around all infix operators.
+xminFahrenheit <- 9/5*xmin+32
+                         ~^~
+Problem_2.R:54:38: style: Variable and function names should be all lowercase.
+temperatures [["xminFahrenheit"]] <- xminFahrenheit
+                                     ^~~~~~~~~~~~~~
+Problem_2.R:62:1: style: Variable and function names should be all lowercase.
+xmaxFahrenheit <- 9/5*xmax+32
+^~~~~~~~~~~~~~
+Problem_2.R:62:20: style: Put spaces around all infix operators.
+xmaxFahrenheit <- 9/5*xmax+32
+                  ~^~
+Problem_2.R:62:22: style: Put spaces around all infix operators.
+xmaxFahrenheit <- 9/5*xmax+32
+                    ~^~
+Problem_2.R:62:27: style: Put spaces around all infix operators.
+xmaxFahrenheit <- 9/5*xmax+32
+                         ~^~
+Problem_2.R:63:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit <- data.frame ( xminFahrenheit, xmaxFahrenheit)
+^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:63:39: style: Variable and function names should be all lowercase.
+temperatureFahrenheit <- data.frame ( xminFahrenheit, xmaxFahrenheit)
+                                      ^~~~~~~~~~~~~~
+Problem_2.R:63:55: style: Variable and function names should be all lowercase.
+temperatureFahrenheit <- data.frame ( xminFahrenheit, xmaxFahrenheit)
+                                                      ^~~~~~~~~~~~~~
+Problem_2.R:64:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit
+^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:68:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit1 <- temperatureFahrenheit[c(1:5), ]
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:68:27: style: Variable and function names should be all lowercase.
+temperatureFahrenheit1 <- temperatureFahrenheit[c(1:5), ]
+                          ^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:69:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit1
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:71:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit2 <- temperatureFahrenheit[-c(6:7), ]
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:71:27: style: Variable and function names should be all lowercase.
+temperatureFahrenheit2 <- temperatureFahrenheit[-c(6:7), ]
+                          ^~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:72:1: style: Variable and function names should be all lowercase.
+temperatureFahrenheit2
+^~~~~~~~~~~~~~~~~~~~~~
+Problem_2.R:73:1: style: Trailing blank lines are superfluous.
+
+^
+Problem_2.R:74:1: style: Trailing blank lines are superfluous.
+
+^
+Problem_2.R:75:1: style: Trailing blank lines are superfluous.
+  
+^
+> 
+> 
